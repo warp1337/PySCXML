@@ -116,7 +116,7 @@ class Interpreter(object):
                 self.running = False
                 continue
             
-            self.logger.info("external event found: %s", externalEvent.name)
+            # self.logger.info("external event found: %s", externalEvent.name)
             
             self.dm["__event"] = externalEvent
             
@@ -237,7 +237,7 @@ class Interpreter(object):
         self.exitStates(enabledTransitions)
         self.executeTransitionContent(enabledTransitions)
         self.enterStates(enabledTransitions)
-        self.logger.info("new config: {" + ", ".join([s.id for s in self.configuration if s.id != "__main__"]) + "}")
+        # self.logger.info("new config: {" + ", ".join([s.id for s in self.configuration if s.id != "__main__"]) + "}")
     
     
     def exitStates(self, enabledTransitions):
