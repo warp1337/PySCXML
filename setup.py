@@ -1,8 +1,8 @@
 
 from setuptools import setup
 
-version = "0.8.4"
-filename = "0.8.4"
+version = "v0.8.4-fsmt"
+filename = "v0.8.4-fsmt"
 
 setup(name="pyscxml",
       version=filename,
