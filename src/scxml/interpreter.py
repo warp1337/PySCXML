@@ -148,7 +148,7 @@ class Interpreter(object):
             if isFinalState(s) and isScxmlState(s.parent):
                 if self.invokeId and self.parentId and self.parentId in self.dm.sessions:
                     self.send(["done", "invoke", self.invokeId], s.donedata(), self.invokeId, self.dm.sessions[self.parentId].interpreter.externalQueue)   
-                self.logger.info("Exiting interpreter")
+                self.logger.debug("Exiting interpreter")
                 dispatcher.send("signal_exit", self, final=s.id)
                 self.exited = True
                 return

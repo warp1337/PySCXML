@@ -149,7 +149,7 @@ class StateMachine(object):
             raise RuntimeError("The StateMachine instance may only be started once.")
         else:
             doc = os.path.join(self.filedir, self.filename) if self.filedir else ""
-            self.logger.info("Starting %s" % doc)
+            self.logger.debug("Starting %s" % doc)
         self._start()
         self.interpreter.mainEventLoop()
     
