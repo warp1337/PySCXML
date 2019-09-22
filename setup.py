@@ -31,5 +31,5 @@ setup(name="pyscxml",
           'Topic :: Text Processing :: Markup :: XML'
           
       ],
-      install_requires=['Louie', 'eventlet', 'suds', 'restlib', "lxml"]
+      install_requires=['Louie==1.1', 'eventlet==0.23.0', 'suds', 'restlib', "lxml"]
      )
