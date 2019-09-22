@@ -1,5 +1,5 @@
-Louie
-eventlet
+Louie==1.1
+eventlet==0.23.0
 restlib
 suds
 lxml
